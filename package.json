@@ -7,12 +7,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test:install": "cypress install",
+    "test": "cypress run"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.3.1",
     "nuxt": "^3.11.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "typescript": "^5.4.5"
   }
 }

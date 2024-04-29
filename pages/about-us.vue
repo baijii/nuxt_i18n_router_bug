@@ -8,12 +8,12 @@ defineI18nRoute({
 
 const {locale} = useI18n()
 
-const navLocale = computed(() => navigator.language)
+const navLocale = computed(() => window?.navigator.language)
 
 </script>
 
 <template>
-  <h1>About us</h1>
+  <h1>{{ $t('aboutUs') }}</h1>
 
   <h2>useI18n().locale</h2>
   <p>{{ locale }}</p>
